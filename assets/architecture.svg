@@ -1,0 +1,106 @@
+<svg width="1400" height="780" viewBox="0 0 1400 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EAF3FF"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1F6FEB"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="780" rx="34" fill="url(#bg)"/>
+  <circle cx="1110" cy="92" r="210" fill="#DCEBFF" opacity="0.45"/>
+  <circle cx="160" cy="690" r="250" fill="#CFFAFE" opacity="0.35"/>
+
+  <text x="700" y="74" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="44" font-weight="800" fill="#0F172A">AI Resume Analyzer Architecture</text>
+  <text x="700" y="112" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" fill="#64748B">Streamlit workspace, FastAPI services, resume intelligence modules, database, and Gemini-powered generation</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="182" width="220" height="132" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="180" y="228" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#0F172A">User</text>
+    <text x="180" y="262" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Uploads resume</text>
+    <text x="180" y="286" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Uses app tools</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="154" width="310" height="188" rx="16" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <rect x="414" y="178" width="66" height="66" rx="12" fill="url(#primary)"/>
+    <text x="447" y="220" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="900" fill="#FFFFFF">UI</text>
+    <text x="545" y="207" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#0F172A">Streamlit App</text>
+    <text x="545" y="248" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Resume Insights</text>
+    <text x="545" y="272" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">ATS Analyzer</text>
+    <text x="545" y="296" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Resume Chat and generators</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="830" y="154" width="310" height="188" rx="16" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <rect x="854" y="178" width="66" height="66" rx="12" fill="#0F172A"/>
+    <text x="887" y="220" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">API</text>
+    <text x="985" y="207" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#0F172A">FastAPI Backend</text>
+    <text x="985" y="248" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Auth routes</text>
+    <text x="985" y="272" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Resume routes</text>
+    <text x="985" y="296" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Interview and recruiter routes</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="470" width="230" height="118" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="210" y="514" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A">PDF Parser</text>
+    <text x="210" y="548" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Extracts resume text</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="390" y="430" width="230" height="158" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="505" y="480" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A">Resume Insights</text>
+    <text x="505" y="516" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Offline audit</text>
+    <text x="505" y="540" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Skills, sections, keywords</text>
+    <text x="505" y="564" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Health score</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="680" y="430" width="230" height="158" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="795" y="480" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A">AI Modules</text>
+    <text x="795" y="516" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">ATS analysis</text>
+    <text x="795" y="540" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Interview, cover letter</text>
+    <text x="795" y="564" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Skill gap and LinkedIn</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="970" y="430" width="230" height="158" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="1085" y="480" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A">Gemini API</text>
+    <text x="1085" y="516" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Content generation</text>
+    <text x="1085" y="540" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Fallbacks on quota errors</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1195" y="184" width="230" height="128" rx="14" transform="translate(-80 0)" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="1230" y="232" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#0F172A">Database</text>
+    <text x="1230" y="268" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Users, resumes</text>
+    <text x="1230" y="292" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">Analyses</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="440" y="656" width="520" height="72" rx="14" fill="#FFFFFF" stroke="#D7E2F0"/>
+    <text x="700" y="686" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#0F172A">Config and Error Handling</text>
+    <text x="700" y="712" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" fill="#64748B">.env, lazy Gemini initialization, quota-safe fallbacks, tests</text>
+  </g>
+
+  <path d="M290 248 H378" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M700 248 H818" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M1115 248 H1110" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <path d="M545 342 V410" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M390 529 H338" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M620 509 H668" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M910 509 H958" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M985 342 V410" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <path d="M700 588 V642" stroke="#2563EB" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+</svg>
