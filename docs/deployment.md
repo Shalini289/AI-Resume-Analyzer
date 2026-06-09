@@ -156,6 +156,22 @@ SECRET_KEY = "your_secret_key"
 
 ## Render Deployment
 
+This project includes a Render blueprint:
+
+```text
+render.yaml
+```
+
+If deploying manually in Render, use these settings:
+
+```text
+Root Directory: leave empty or use .
+Build Command: pip install -r requirements.txt
+Start Command: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT
+```
+
+Do not set the root directory to `api`, `backend`, `frontend`, or `docs`, because Render will not find the root-level `requirements.txt`.
+
 For Streamlit:
 
 ```bash

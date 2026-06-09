@@ -370,17 +370,23 @@ elif page == "ATS Analyzer":
 
     render_feature_header(page)
 
-    job_description = st.text_area(
-        "Paste Job Description",
-        height=180,
-        placeholder="Paste the role description here..."
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "ats_analyzer_form",
+        enter_to_submit=True
     ):
+        job_description = st.text_area(
+            "Paste Job Description",
+            height=180,
+            placeholder="Paste the role description here..."
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         if not st.session_state.resume_text:
             st.warning("Upload resume first")
@@ -448,16 +454,22 @@ elif page == "Resume Chat":
 
     render_feature_header(page)
 
-    question = st.text_input(
-        "Ask a Question",
-        placeholder="Example: What projects best match a Python developer role?"
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "resume_chat_form",
+        enter_to_submit=True
     ):
+        question = st.text_input(
+            "Ask a Question",
+            placeholder="Example: What projects best match a Python developer role?"
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         if not st.session_state.resume_text:
             st.warning("Upload resume first")
@@ -482,17 +494,23 @@ elif page == "Interview Generator":
 
     render_feature_header(page)
 
-    jd = st.text_area(
-        "Paste Job Description",
-        height=180,
-        placeholder="Paste the job description to tailor interview questions..."
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "interview_generator_form",
+        enter_to_submit=True
     ):
+        jd = st.text_area(
+            "Paste Job Description",
+            height=180,
+            placeholder="Paste the job description to tailor interview questions..."
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         questions = generate_interview_questions(
             st.session_state.resume_text,
@@ -509,17 +527,23 @@ elif page == "Cover Letter":
 
     render_feature_header(page)
 
-    jd = st.text_area(
-        "Paste Job Description",
-        height=180,
-        placeholder="Paste the role description for a tailored cover letter..."
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "cover_letter_form",
+        enter_to_submit=True
     ):
+        jd = st.text_area(
+            "Paste Job Description",
+            height=180,
+            placeholder="Paste the role description for a tailored cover letter..."
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         letter = generate_cover_letter(
             st.session_state.resume_text,
@@ -536,16 +560,22 @@ elif page == "Skill Gap":
 
     render_feature_header(page)
 
-    target_role = st.text_input(
-        "Target Role",
-        placeholder="Example: Data Analyst, Backend Engineer, Product Manager"
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "skill_gap_form",
+        enter_to_submit=True
     ):
+        target_role = st.text_input(
+            "Target Role",
+            placeholder="Example: Data Analyst, Backend Engineer, Product Manager"
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         result = analyze_skill_gap(
             st.session_state.resume_text,
@@ -562,17 +592,23 @@ elif page == "Resume Rewriter":
 
     render_feature_header(page)
 
-    bullet = st.text_area(
-        "Paste Resume Bullet",
-        height=150,
-        placeholder="Paste one resume bullet to rewrite..."
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "resume_rewriter_form",
+        enter_to_submit=True
     ):
+        bullet = st.text_area(
+            "Paste Resume Bullet",
+            height=150,
+            placeholder="Paste one resume bullet to rewrite..."
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         rewritten = rewrite_resume(
             bullet
@@ -588,17 +624,23 @@ elif page == "LinkedIn Optimizer":
 
     render_feature_header(page)
 
-    linkedin_content = st.text_area(
-        "Paste LinkedIn Content",
-        height=180,
-        placeholder="Paste your headline, about section, or profile draft..."
-    )
-
-    if st.button(
-        FEATURES[page]["action"],
-        type="primary",
-        use_container_width=True
+    with st.form(
+        "linkedin_optimizer_form",
+        enter_to_submit=True
     ):
+        linkedin_content = st.text_area(
+            "Paste LinkedIn Content",
+            height=180,
+            placeholder="Paste your headline, about section, or profile draft..."
+        )
+
+        submitted = st.form_submit_button(
+            FEATURES[page]["action"],
+            type="primary",
+            use_container_width=True
+        )
+
+    if submitted:
 
         optimized = optimize_linkedin(
             linkedin_content
