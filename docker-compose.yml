@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  resume-analyzer:
+
+    build: .
+
+    container_name: resume-analyzer
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
+
+    restart: unless-stopped
+
+    volumes:
+      - ./uploads:/app/uploads
+      - ./vector_store:/app/vector_store
+      - ./reports:/app/reports
